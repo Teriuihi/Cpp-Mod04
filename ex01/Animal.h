@@ -12,7 +12,7 @@ public:
 	Animal(const std::string& type);
 	Animal(Animal const &);
 	Animal& operator=(Animal const &);
-	~Animal();
+	virtual ~Animal();
 
 	virtual void makeSound() const;
 

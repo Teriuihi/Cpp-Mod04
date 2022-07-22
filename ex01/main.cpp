@@ -1,21 +1,19 @@
-#include <iostream>
 #include "Dog.h"
 #include "Cat.h"
-#include "WrongCat.h"
 
 int main()
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	const Animal* animals[100];
 
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	std::cout << wrongI->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
-	wrongI->makeSound();
-	wrongMeta->makeSound();
+	Dog* d1 = new Dog();
+	Dog* d2 = new Dog(*d1);
+	delete d1;
+	delete d2;
+
+	for (int i = 0; i < 10; i++)
+		animals[i] = (i % 2 ? (Animal *) (new Cat()) : new Dog());
+	for (int i = 0; i < 10; i++)
+		delete animals[i];
+
 	return 0;
 }
