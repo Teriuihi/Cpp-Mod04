@@ -3,7 +3,7 @@ CC=gcc
 CFLAGS=-Wall -Wextra -Werror -std=c++98
 RM=rm -f
 
-FILES=main.cpp Character.cpp AMateria.cpp Ice.cpp Cure.cpp
+FILES=main.cpp Character.cpp AMateria.cpp Ice.cpp Cure.cpp MaterialSource.cpp
 FILES_OBJ=$(FILES:%.cpp=%.o)
 
 all: $(NAME)

@@ -6,12 +6,11 @@
 #include "ICharacter.h"
 
 class AMateria {
-private:
-	AMateria();
 protected:
+	AMateria();
+	AMateria(std::string const & type);
 	std::string type;
 public:
-	AMateria(std::string const & type);
 	AMateria(AMateria const &);
 	AMateria& operator=(AMateria const &);
 	~AMateria();

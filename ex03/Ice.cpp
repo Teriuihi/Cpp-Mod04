@@ -23,3 +23,11 @@ Ice &Ice::operator=(const Ice &aMateria) {
 Ice::~Ice() {
 	std::cout << "Ice of type [" << type << "] deconstructed." << std::endl;
 }
+
+AMateria *Ice::clone() const {
+	return new Ice(*this);
+}
+
+void Ice::use(ICharacter &target) {
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
+}

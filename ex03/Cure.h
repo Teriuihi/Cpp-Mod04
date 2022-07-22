@@ -4,12 +4,15 @@
 
 
 class Cure : public AMateria {
+public:
 	Cure();
 	Cure(const std::string& type);
 	Cure(Cure const &);
-	Cure& operator=(Cure const &);
 	~Cure();
+	Cure& operator=(Cure const &);
 
+	AMateria *clone() const;
+	void use(ICharacter &target);
 };
 
 
