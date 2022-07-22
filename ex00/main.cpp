@@ -19,5 +19,8 @@ int main()
 	meta->makeSound();
 	wrongI->makeSound();
 	wrongMeta->makeSound();
+	delete meta;
+	delete j;
+	delete i;
 	return 0;
 }
