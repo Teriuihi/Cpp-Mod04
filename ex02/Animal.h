@@ -5,10 +5,10 @@
 #include <string>
 
 class Animal {
-private:
-	Animal();
 protected:
 	std::string type;
+	Animal();
+	Animal(const std::string& type);
 public:
 	Animal(Animal const &);
 	Animal& operator=(Animal const &);
