@@ -1,11 +1,8 @@
 #ifndef CAT_H
 #define CAT_H
-#include "Animal.h"
-#include "Brain.h"
+#include "Animal.hpp"
 
 class Cat : public Animal {
-private:
-	Brain* brain;
 public:
 	Cat();
 	Cat(const std::string& type);

@@ -1,6 +1,6 @@
 #ifndef HARACTER_H
 #define HARACTER_H
-#include "ICharacter.h"
+#include "ICharacter.hpp"
 
 class Character : public ICharacter {
 private:

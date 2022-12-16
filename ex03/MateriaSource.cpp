@@ -1,5 +1,5 @@
 #include <iostream>
-#include "MateriaSource.h"
+#include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource() : pos(0) {
 	std::cout << "MateriaSource created using default constructor" << std::endl;

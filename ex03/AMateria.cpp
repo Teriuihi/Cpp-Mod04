@@ -1,5 +1,5 @@
 #include <iostream>
-#include "AMateria.h"
+#include "AMateria.hpp"
 
 AMateria::AMateria() : type("default"){
 	std::cout << "AMateria of type [" << type << "] created using default constructor" << std::endl;

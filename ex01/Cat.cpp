@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cat.h"
+#include "Cat.hpp"
 
 Cat::Cat() : Animal("Cat") {
 	brain = new Brain();

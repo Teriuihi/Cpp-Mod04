@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cat.h"
+#include "Cat.hpp"
 
 Cat::Cat() : Animal("Cat") {
 	std::cout << "Cat of type [" << type << "] created with default constructor." << std::endl;

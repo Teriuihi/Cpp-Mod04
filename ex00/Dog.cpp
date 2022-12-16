@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Dog.h"
+#include "Dog.hpp"
 
 Dog::Dog() : Animal("Dog") {
 	std::cout << "Dog of type [" << type << "] created with default constructor." << std::endl;

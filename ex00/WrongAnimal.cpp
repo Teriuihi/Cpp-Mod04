@@ -1,5 +1,5 @@
 #include <iostream>
-#include "WrongAnimal.h"
+#include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal() : type("secretly a turtle"){
 	std::cout << "WrongAnimal of type [" << type << "] created with default constructor." << std::endl;

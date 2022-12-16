@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Ice.h"
+#include "Ice.hpp"
 
 Ice::Ice() : AMateria("ice") {
 	std::cout << "Ice of type [" << type << "] created using default constructor" << std::endl;

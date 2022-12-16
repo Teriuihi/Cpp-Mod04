@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Character.h"
+#include "Character.hpp"
 
 void copyInventory(AMateria **from, char fromPos, AMateria **to, char toPos) {
 	for (int i = 0; i < fromPos; i++)

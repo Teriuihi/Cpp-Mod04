@@ -1,5 +1,5 @@
 #include <iostream>
-#include "WrongCat.h"
+#include "WrongCat.hpp"
 
 WrongCat::WrongCat() : WrongAnimal("WrongCat") {
 	std::cout << "WrongCat of type [" << type << "] created with default constructor." << std::endl;

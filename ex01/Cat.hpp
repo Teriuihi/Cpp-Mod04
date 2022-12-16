@@ -1,7 +1,7 @@
 #ifndef CAT_H
 #define CAT_H
-#include "Animal.h"
-#include "Brain.h"
+#include "Animal.hpp"
+#include "Brain.hpp"
 
 class Cat : public Animal {
 private:

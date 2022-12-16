@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Brain.h"
+#include "Brain.hpp"
 
 void copyIdeas(const std::string *from, std::string *to) {
 	for (int i = 0; i < 100; i++) {

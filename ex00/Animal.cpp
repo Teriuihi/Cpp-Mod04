@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Animal.h"
+#include "Animal.hpp"
 
 Animal::Animal() : type("secretly a dolphin"){
 	std::cout << "Animal of type [" << type << "] created with default constructor." << std::endl;

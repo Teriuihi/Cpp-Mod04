@@ -1,6 +1,6 @@
 #ifndef IMATERIASOURCE_H
 #define IMATERIASOURCE_H
-#include "AMateria.h"
+#include "AMateria.hpp"
 
 class IMateriaSource
 {

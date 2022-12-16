@@ -2,7 +2,7 @@
 #define ICE_H
 
 
-#include "AMateria.h"
+#include "AMateria.hpp"
 
 class Ice : public AMateria {
 public:

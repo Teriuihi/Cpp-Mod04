@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Dog.h"
+#include "Dog.hpp"
 
 Dog::Dog() : Animal("Dog") {
 	brain = new Brain();

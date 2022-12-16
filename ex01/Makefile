@@ -1,18 +1,23 @@
-NAME=ex01
-CC=gcc
-CFLAGS=-Wall -Wextra -Werror -std=c++98
+NAME=ex00
+CC=c++
+FLAGS=-Wall -Wextra -Werror -std=c++98
 RM=rm -f
 
-FILES=main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
-FILES_OBJ=$(FILES:%.cpp=%.o)
+FILES=main.cpp Animal.cpp Brain.cpp Cat.cpp Dog.cpp
+HEADERS=Animal.hpp Brain.hpp Cat.hpp Dog.hpp
+
+OBJ=$(FILES:%.cpp=%.o)
+
+%.o: %.cpp $(HEADERS)
+	$(CC) $(FLAGS) -c $< -o $(<:.cpp=.o)
+
+$(NAME): $(OBJ) $(HEADERS)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
 
 all: $(NAME)
 
-$(NAME): $(FILES_OBJ)
-	$(CC) $(CFLAGS) -o $(NAME) $(FILES_OBJ) -lstdc++
-
 clean:
-	$(RM) $(FILES_OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
 	$(RM) $(NAME)

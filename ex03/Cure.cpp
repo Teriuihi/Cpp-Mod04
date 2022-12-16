@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Cure.h"
+#include "Cure.hpp"
 
 Cure::Cure() : AMateria("cure") {
 	std::cout << "Cure of type [" << type << "] created using default constructor" << std::endl;
