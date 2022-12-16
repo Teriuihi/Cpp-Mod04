@@ -2,15 +2,12 @@
 #include "Brain.hpp"
 
 void copyIdeas(const std::string *from, std::string *to) {
-	for (int i = 0; i < 100; i++) {
-		if (from[i].empty())
-			continue;
+	for (std::string::size_type i = 0; i < from->length(); i++) {
 		to[i] = from[i];
 	}
 }
 
 Brain::Brain() {
-	ideas = new std::string[100];
 	std::cout << "Brain created with default constructor" << std::endl;
 }
 
@@ -21,7 +18,7 @@ Brain::Brain(const std::string *ideas) {
 
 Brain::Brain(const Brain &brain) {
 	std::cout << "Brain created with copy constructor" << std::endl;
-	*this = brain;
+	copyIdeas(brain.ideas, this->ideas);
 }
 
 Brain &Brain::operator=(const Brain &brain) {

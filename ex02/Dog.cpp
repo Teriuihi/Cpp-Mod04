@@ -14,13 +14,20 @@ Dog::Dog(const std::string &type) : Animal(type) {
 Dog::Dog(const Dog &dog) {
 	std::cout << "Dog of type [" << type << "] created with copy constructor." << std::endl;
 	*this = dog;
+	delete this->brain;
+	this->brain = new Brain(*dog.brain);
 }
 
 Dog &Dog::operator=(const Dog &dog) {
 	std::cout << "Dog of type [" << type << "] copied with assignment operator." << std::endl;
 	this->type = dog.type;
+	delete this->brain;
 	this->brain = new Brain(*dog.brain);
 	return *this;
+}
+
+Brain *Dog::getBrain() {
+	return this->brain;
 }
 
 Dog::~Dog() {

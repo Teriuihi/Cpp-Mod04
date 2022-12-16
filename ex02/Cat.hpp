@@ -13,6 +13,7 @@ public:
 	Cat& operator=(Cat const &);
 	~Cat();
 	void makeSound() const;
+	Brain *getBrain();
 };
 
 
