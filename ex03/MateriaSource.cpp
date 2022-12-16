@@ -21,9 +21,15 @@ MateriaSource::~MateriaSource() {
 }
 
 void MateriaSource::learnMateria(AMateria *materia) {
-
+	if (pos == 4)
+		return; //TODO check if this is correct behavior
+	memory[pos++] = materia;
 }
 
 AMateria *MateriaSource::createMateria(const std::string &type) {
-	return NULL;
+	for (int i = 0; i < pos; i++) {
+		if (memory[i]->getType() == type)
+			return memory[i];
+	}
+	return nullptr;
 }

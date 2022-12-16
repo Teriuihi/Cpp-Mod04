@@ -8,7 +8,7 @@ public:
 	Cure();
 	Cure(const std::string& type);
 	Cure(Cure const &);
-	~Cure();
+	virtual ~Cure();
 	Cure& operator=(Cure const &);
 
 	AMateria *clone() const;

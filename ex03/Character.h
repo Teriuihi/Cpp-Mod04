@@ -1,16 +1,14 @@
 #ifndef HARACTER_H
 #define HARACTER_H
-
-
 #include "ICharacter.h"
 
 class Character : public ICharacter {
 private:
 	Character();
 	static const int iSize = 4;
-	int pos;
+	char pos;
 	std::string name;
-	AMateria *inventory[Character::iSize];
+	AMateria **inventory;
 public:
 	Character(std::string name);
 	Character(const Character &character);

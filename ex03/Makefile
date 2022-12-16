@@ -1,9 +1,9 @@
-NAME=ex02
+NAME=ex03
 CC=gcc
 CFLAGS=-Wall -Wextra -Werror -std=c++98
 RM=rm -f
 
-FILES=main.cpp Character.cpp AMateria.cpp Ice.cpp Cure.cpp MaterialSource.cpp
+FILES=main.cpp Character.cpp AMateria.cpp Ice.cpp Cure.cpp MateriaSource.cpp
 FILES_OBJ=$(FILES:%.cpp=%.o)
 
 all: $(NAME)

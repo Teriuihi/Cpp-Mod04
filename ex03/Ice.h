@@ -9,7 +9,7 @@ public:
 	Ice();
 	Ice(const std::string& type);
 	Ice(Ice const &);
-	~Ice();
+	virtual ~Ice();
 	Ice& operator=(Ice const &);
 
 	AMateria *clone() const;

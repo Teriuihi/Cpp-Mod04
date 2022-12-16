@@ -5,7 +5,7 @@
 class MateriaSource : public IMateriaSource {
 private:
 	static const int mSize = 4;
-	MateriaSource *memory[MateriaSource::mSize];
+	AMateria *memory[MateriaSource::mSize];
 	int pos;
 public:
 	MateriaSource();
