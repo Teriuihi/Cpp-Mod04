@@ -18,6 +18,8 @@ int main()
 	for (int i = 0; i < 10; i++)
 		animals[i] = (i % 2 ? (Animal *) (new Cat()) : new Dog());
 	for (int i = 0; i < 10; i++)
+		animals[i]->makeSound();
+	for (int i = 0; i < 10; i++)
 		delete animals[i];
 
 	return 0;
