@@ -8,7 +8,6 @@ private:
 	Brain* brain;
 public:
 	Dog();
-	Dog(const std::string& type);
 	Dog(Dog const &);
 	Dog& operator=(Dog const &);
 	~Dog();

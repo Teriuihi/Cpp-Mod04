@@ -6,11 +6,6 @@ Dog::Dog() : Animal("Dog") {
 	std::cout << "Dog of type [" << type << "] created with default constructor." << std::endl;
 }
 
-Dog::Dog(const std::string &type) : Animal(type) {
-	brain = new Brain();
-	std::cout << "Dog of type [" << type << "] created with type constructor." << std::endl;
-}
-
 Dog::Dog(const Dog &dog) {
 	std::cout << "Dog of type [" << type << "] created with copy constructor." << std::endl;
 	*this = dog;
