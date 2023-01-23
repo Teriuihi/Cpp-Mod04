@@ -7,15 +7,15 @@ Cat::Cat() : Animal("Cat") {
 }
 
 Cat::Cat(const Cat &cat) {
-	std::cout << "Cat of type [" << type << "] created with copy constructor." << std::endl;
 	*this = cat;
+	std::cout << "Cat of type [" << type << "] created with copy constructor." << std::endl;
 }
 
 Cat &Cat::operator=(const Cat &cat) {
-	std::cout << "Cat of type [" << type << "] copied with assignment operator." << std::endl;
 	this->type = cat.type;
 	delete this->brain;
 	this->brain = new Brain(*cat.brain);;
+	std::cout << "Cat of type [" << type << "] copied with assignment operator." << std::endl;
 	return *this;
 }
 

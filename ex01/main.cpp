@@ -8,7 +8,7 @@ int main()
 
 	Dog* d1 = new Dog();
 	Dog d2 = Dog(*d1);
-	Cat cat = Cat("weird type");
+	Cat cat = Cat();
 	Cat cat2 = cat;
 
 	std::cout << "d1\t" << d1->getBrain() << "\nd2\t" << d2.getBrain() << std::endl;

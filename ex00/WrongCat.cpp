@@ -10,13 +10,13 @@ WrongCat::WrongCat(const std::string &type) : WrongAnimal(type) {
 }
 
 WrongCat::WrongCat(const WrongCat &cat) {
-	std::cout << "WrongCat of type [" << type << "] created with copy constructor." << std::endl;
 	*this = cat;
+	std::cout << "WrongCat of type [" << type << "] created with copy constructor." << std::endl;
 }
 
 WrongCat &WrongCat::operator=(const WrongCat &cat) {
-	std::cout << "WrongCat of type [" << type << "] copied with assignment operator." << std::endl;
 	this->type = cat.type;
+	std::cout << "WrongCat of type [" << type << "] copied with assignment operator." << std::endl;
 	return *this;
 }
 

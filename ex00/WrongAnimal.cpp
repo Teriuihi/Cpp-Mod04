@@ -10,13 +10,13 @@ WrongAnimal::WrongAnimal(const std::string &type) : type(type) {
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &animal) {
-	std::cout << "WrongAnimal of type [" << type << "] created with copy constructor." << std::endl;
 	*this = animal;
+	std::cout << "WrongAnimal of type [" << type << "] created with copy constructor." << std::endl;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &animal) {
-	std::cout << "WrongAnimal of type [" << type << "] copied with assignment operator." << std::endl;
 	this->type = animal.type;
+	std::cout << "WrongAnimal of type [" << type << "] copied with assignment operator." << std::endl;
 	return *this;
 }
 
