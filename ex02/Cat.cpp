@@ -14,8 +14,6 @@ Cat::Cat(const std::string &type) : Animal(type) {
 Cat::Cat(const Cat &cat) {
 	std::cout << "Cat of type [" << type << "] created with copy constructor." << std::endl;
 	*this = cat;
-	delete this->brain;
-	this->brain = new Brain(*cat.brain);
 }
 
 Cat &Cat::operator=(const Cat &cat) {
